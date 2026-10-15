@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC</title>
+     <!-- styles -->
+        <link rel="stylesheet" href="./style.css">
+    <!-- fontss -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single:wght@100..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <h1>Tic Tac Toe</h1>
+        <div id="gameContainer">
+                <div id="gameBoard">
+                        <div id="0" class="boxes"></div>
+                        <div id="1" class="boxes"></div>
+                        <div id="2" class="boxes"></div>
+                        <div id="3" class="boxes"></div>
+                        <div id="4" class="boxes"></div>
+                        <div id="5" class="boxes"></div>
+                        <div id="6" class="boxes"></div>
+                        <div id="7" class="boxes"></div>
+                        <div id="8" class="boxes"></div>
+                </div>
+        </div>
+        <h2 id="statusText">X's turn</h2>
+        <div id="result">
+            <div id="X" class="winner">X : 0</div>
+            <div id="O" class="winner">O : 0</div>
+        </div>
+        <button onclick="resetGame()" id="resetBtn">RESET</button>
+        <button onclick="deleteGame()" id="deleteBtn">DELETE</button>
+    </section>
+    <script src="./index.js"></script>
+</body>
+</html>

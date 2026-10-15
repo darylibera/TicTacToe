@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    width: 100%;
+    text-align: center;
+    height: 100vh;
+    background:linear-gradient(45deg, black,rgba(0, 0, 0, 0.757));
+}
+h1{
+    color: white;
+    font-family: "Comic Neue", cursive;
+
+}
+#gameContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameBoard{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 15px;
+    margin-top: 0.5rem;
+}
+
+.boxes{
+    background-color: #288d04;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 140px;
+    font-style:italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Comic Neue", cursive;
+    line-height: 0px;
+    border: none;
+    cursor: pointer;
+    box-shadow:  -3px 3px 13px rgb(0, 0, 0);
+}
+
+#statusText {
+    color: white;
+    font-family: "Comic Neue", cursive;
+    line-height: 0px;
+    padding-top: 15px;
+}
+
+#result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+.winner{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: 80px;
+    line-height: 80px;
+    color:white;
+}
+
+#resetBtn{
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(2, 156, 25);
+    margin: 0px 10px;
+}
+#deleteBtn{
+    font-family: "Bitcount Prop Single", system-ui;
+    font-size: 15px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: rgb(238, 8, 8);
+    margin: 0px 10px;
+
+}
